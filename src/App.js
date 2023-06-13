@@ -6,11 +6,9 @@ import Home from "./components/Home";
 
 
 function App() {
-  const basename = process.env.NODE_ENV === "production" ? "/vibes" : "";
-
   return (
     <div className="App">
-      <Router basename={basename}>
+      <Router>
         <Header />
         <Routes>
           <Route path="/login" element={<Login />} />
